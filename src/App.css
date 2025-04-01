@@ -60,6 +60,14 @@
     border-bottom: 1px solid #eee;
   }
 
+  tr:nth-child(even) {
+    background-color: #E2BFD9;
+  }
+  
+  tr:hover {
+    background-color: #ebe9e8;
+  }
+
   .errorMsg{
     color:#c82333;
     margin-bottom:15px;
@@ -90,6 +98,10 @@
   .btn-info {
     background-color: #33bee5;
   }
+
+  .btn:hover {
+    transform: translateY(-2px);
+  }
   
   .btn-add {
     background-color: #533366;
@@ -102,6 +114,22 @@
     padding: 12px 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(103, 65, 136, 0.2);
+  }
+
+  .btn-add:hover {
+    box-shadow: 0 6px 12px rgba(103, 65, 136, 0.3);
+  }
+  
+  .btn-primary:hover {
+    background-color: #533366;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+  }
+  
+  .btn-info:hover {
+    background-color: #91dbef;
   }
 
     /* Form Styling (Add Student Page) */
@@ -124,12 +152,20 @@
       border: 1px solid #ccc;
     }
     
-    .btn-save {
+    .btn-save, .btn-update {
       background-color: #533366;
     }
 
     .btn-back {
       background-color: #dc3545;
+    }
+
+    .btn-back:hover {
+      background-color: #c82333;
+    }
+
+    .btn-save:hover ,.btn-update:hover {
+      background-color: #674188;
     }
 
    /* View Page Specific Styles */

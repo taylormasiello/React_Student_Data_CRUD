@@ -40,7 +40,7 @@ export default function StudentTable(){
                 <table>
                     <thead>
                         <tr>
-                            <th>ID</th>
+                            <th>Record</th>
                             <th>First Name</th>
                             <th>Location</th>
                             <th>Email Address</th>
@@ -49,9 +49,9 @@ export default function StudentTable(){
                         </tr>
                     </thead>
                     <tbody>
-                        {students && students.map((item)=>(
+                        {students && students.map((item,index)=>(
                             <tr key={item.id}>
-                            <td>{item.id}</td>
+                            <td>{index+1}</td>
                             <td>{item.name}</td>
                             <td>{item.location}</td>
                             <td>{item.email}</td>
