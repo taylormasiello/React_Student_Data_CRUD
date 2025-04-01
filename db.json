@@ -2,35 +2,35 @@
     "students":[
         {
         "id":1,
-        "name":"Taylor M",
+        "name":"Taylor",
         "location":"Clearwater, FL",
         "email":"fakeemail@gmail.com",
         "phone":"123-456-0789"
         },
         {
         "id":2,
-        "name":"Alex W",
+        "name":"Alex",
         "location":"California",
         "email":"fakeemail1@gmail.com",
         "phone":"560-789-1234"
         },
         {
         "id":3,
-        "name":"Roxy M",
+        "name":"Roxy",
         "location":"Clearwater, FL",
         "email":"fakeemail2@gmail.com",
         "phone":"456-078-9123"
         },
         {
         "id":4,
-        "name":"Jenn D",
+        "name":"Jenn",
         "location":"California",
         "email":"fakeemail3@gmail.com",
         "phone":"345-607-8921"
         },
         {
         "id":5,
-        "name":"Paul B",
+        "name":"Paul",
         "location":"Remote, USA",
         "email":"fakeemail4@gmail.com",
         "phone":"234-560-7891"

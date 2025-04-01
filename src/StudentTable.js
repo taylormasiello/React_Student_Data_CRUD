@@ -20,7 +20,7 @@ export default function StudentTable(){
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Full Name</th>
+                            <th>First Name</th>
                             <th>Location</th>
                             <th>Email Address</th>
                             <th>Phone Number</th>
