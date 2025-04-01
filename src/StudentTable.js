@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 export default function StudentTable(){
     return(
         <div className="container">
             <h2>Student Records</h2>
             <div className="table-container">
-                <a href="#" class="btn btn-add">Add New Student</a>
+                <Link to="/student/create" class="btn btn-add">Add New Student</Link>
                 <table>
                     <thead>
                         <tr>
@@ -23,9 +25,9 @@ export default function StudentTable(){
                             <td>fakeemail@gmail.com</td>
                             <td>123-456-7890</td>
                             <td>
-                                <a href="" className="btn">View</a>
-                                <a href="" className="btn">Edit</a>
-                                <a href="" className="btn">Delete</a>
+                                <a href="" className="btn btn-info">View</a>
+                                <a href="" className="btn btn-primary">Edit</a>
+                                <a href="" className="btn btn-danger">Delete</a>
                             </td>
                         </tr>
                     </tbody>
