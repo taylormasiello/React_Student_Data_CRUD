@@ -6,6 +6,34 @@
         "location":"Clearwater, FL",
         "email":"fakeemail@gmail.com",
         "phone":"123-456-0789"
+        },
+        {
+        "id":2,
+        "name":"Alex W",
+        "location":"California",
+        "email":"fakeemail1@gmail.com",
+        "phone":"560-789-1234"
+        },
+        {
+        "id":3,
+        "name":"Roxy M",
+        "location":"Clearwater, FL",
+        "email":"fakeemail2@gmail.com",
+        "phone":"456-078-9123"
+        },
+        {
+        "id":4,
+        "name":"Jenn D",
+        "location":"California",
+        "email":"fakeemail3@gmail.com",
+        "phone":"345-607-8921"
+        },
+        {
+        "id":5,
+        "name":"Paul B",
+        "location":"Remote, USA",
+        "email":"fakeemail4@gmail.com",
+        "phone":"234-560-7891"
         }
     ]
 }
