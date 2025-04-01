@@ -1,0 +1,11 @@
+{
+    "students":[
+        {
+        "id":1,
+        "name":"Taylor Masiello",
+        "location":"Clearwater, FL",
+        "email":"fakeemail@gmail.com",
+        "phone":"123-456-0789"
+        }
+    ]
+}
