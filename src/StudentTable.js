@@ -4,8 +4,12 @@ import { Link, useNavigate } from "react-router-dom";
 export default function StudentTable(){
     const [students, setStudents] = useState("");
     const navigate=useNavigate();
+
     const DisplayDetails=(id) => {
-        navigate("/student/view/" + id);
+        navigate("/student/view/"+id);
+    }
+    const EditDetails=(id) => {
+        navigate("/student/edit/"+id);
     }
 
     useEffect(()=>{
@@ -41,7 +45,7 @@ export default function StudentTable(){
                             <td>{item.phone}</td>
                             <td>
                                 <button onClick={()=>DisplayDetails(item.id)} className="btn btn-info">View</button>
-                                <button className="btn btn-primary">Edit</button>
+                                <button onClick={()=>EditDetails(item.id)} className="btn btn-primary">Edit</button>
                                 <button className="btn btn-danger">Delete</button>
                             </td>
                             </tr>
