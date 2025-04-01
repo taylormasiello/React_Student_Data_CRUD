@@ -17,7 +17,6 @@ export default function EditStudent(){
     const [validationPhone, setValidationPhone]=useState(false);
 
     const navigate=useNavigate();
-    //const [studentData,setStudentData]=useState({});
     
     useEffect(()=>{
         fetch("http://localhost:8000/students/"+studentid)

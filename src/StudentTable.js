@@ -12,6 +12,19 @@ export default function StudentTable(){
         navigate("/student/edit/"+id);
     }
 
+    const RemoveDetails=(id) => {
+        if(window.confirm("Are you sure you want to Permanently Delete this Student Data?")){
+            fetch("http://localhost:8000/students/"+id, {
+                method:'DELETE'
+            })
+            .then((res)=>{
+                alert("Deleted Student Data successfully!");
+                window.location.reload();
+            })
+            .catch((err)=>console.log(err.message))
+        }
+    }
+
     useEffect(()=>{
         fetch("http://localhost:8000/students")
         .then((res)=>res.json())
@@ -46,7 +59,7 @@ export default function StudentTable(){
                             <td>
                                 <button onClick={()=>DisplayDetails(item.id)} className="btn btn-info">View</button>
                                 <button onClick={()=>EditDetails(item.id)} className="btn btn-primary">Edit</button>
-                                <button className="btn btn-danger">Delete</button>
+                                <button onClick={()=>RemoveDetails(item.id)} className="btn btn-danger">Delete</button>
                             </td>
                             </tr>
                         ))}
