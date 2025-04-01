@@ -60,6 +60,11 @@
     border-bottom: 1px solid #eee;
   }
 
+  .errorMsg{
+    color:#c82333;
+    margin-bottom:15px;
+  }
+
   /* Button Styling */
   .btn {
     display: inline-block;
