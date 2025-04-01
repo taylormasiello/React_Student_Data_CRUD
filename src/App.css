@@ -131,3 +131,35 @@
     .btn-back {
       background-color: #dc3545;
     }
+
+   /* View Page Specific Styles */
+   .view-container {
+    max-width: max-content;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-top: 4px solid #E68369;
+  }
+  
+  .view-container h2 {
+    color: #E68369;
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+  
+  .details {
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: #131842;
+  }
+  
+  .details p {
+    margin: 10px 0;
+  }
+  
+  .details p strong {
+    font-weight: bold;
+    color: #674188;
+  }

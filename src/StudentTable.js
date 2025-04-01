@@ -1,11 +1,15 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function StudentTable(){
     const [students, setStudents] = useState("");
+    const navigate=useNavigate();
+    const DisplayDetails=(id) => {
+        navigate("/student/view/" + id);
+    }
 
     useEffect(()=>{
-        fetch('http://localhost:8000/students')
+        fetch("http://localhost:8000/students")
         .then((res)=>res.json())
         .then((data)=>setStudents(data))
         .catch((err)=>console.log(err.message))
@@ -29,16 +33,16 @@ export default function StudentTable(){
                     </thead>
                     <tbody>
                         {students && students.map((item)=>(
-                            <tr>
+                            <tr key={item.id}>
                             <td>{item.id}</td>
                             <td>{item.name}</td>
                             <td>{item.location}</td>
                             <td>{item.email}</td>
                             <td>{item.phone}</td>
                             <td>
-                                <a href="" className="btn btn-info">View</a>
-                                <a href="" className="btn btn-primary">Edit</a>
-                                <a href="" className="btn btn-danger">Delete</a>
+                                <button onClick={()=>DisplayDetails(item.id)} className="btn btn-info">View</button>
+                                <button className="btn btn-primary">Edit</button>
+                                <button className="btn btn-danger">Delete</button>
                             </td>
                             </tr>
                         ))}
