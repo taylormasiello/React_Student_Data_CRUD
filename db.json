@@ -29,13 +29,6 @@
       "phone": "457-358-6584"
     },
     {
-      "id": "585",
-      "name": "Paul",
-      "location": "Remote, USA",
-      "email": "fakeemail333@gmail.com",
-      "phone": "245-869-6545"
-    },
-    {
       "id": "684",
       "name": "Zac",
       "location": "California",
@@ -51,7 +44,7 @@
     },
     {
       "id": "445",
-      "name": "Turbo",
+      "name": "Turbito",
       "location": "Rainbow Road",
       "email": "fakeemail99@gmail.com",
       "phone": "555-698-8989"
